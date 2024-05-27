@@ -29,6 +29,7 @@ Resultado.click()
 time.sleep(5)
 
 #Ingresar Origen
+
 Origen= driver.find_element(By.XPATH, "//input[@id='txtInputOrigin_field']")
 Origen.send_keys("Buenos Aires")
 Origen= driver.find_element(By.XPATH, "//span[contains(text(), 'Todos los aeropuertos')]")
@@ -54,6 +55,10 @@ Fecha_vuelta= driver.find_element(By.XPATH, "//div[@class='sc-cIIdys gABgRF']")
 Fecha_vuelta.click()
 Fecha_vuelta= driver.find_element(By.XPATH, "//td[@aria-label='Elija viernes, 26 de julio de 2024 como fecha de vuelta. Está disponible.']")
 Fecha_vuelta.click()
+
+
+# Tiempo de espera
+time.sleep(5)
 
 # Seleccionar el botón Buscar
 Buscar= driver.find_element(By.ID, 'btnSearchCTA')
